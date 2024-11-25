@@ -8,6 +8,19 @@
         h1{
             background-color: cyan;
         }
+        table{
+            /* collapse: Adjacent cells have shared borders */
+            /* separate: Adjacent cells have distinct borders */
+            border-collapse: collapse;
+        }
+
+        /* solid, dotted, dashed */
+        th, td{
+            border: 1px solid black;
+            /* first one for top & bottom, next one for right and left */
+            padding: 0px 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -51,7 +64,135 @@
 
         <img src="Screenshot 2024-11-05 182541.png" alt="Oil issue">
 
+        <h1>How to create a Form</h1>
+        <br>
+        <form action="">
+            <p>Name: 
+                <input type="text" placeholder="Enter Your Name">
+            </p>
+            <p>Phone Number: 
+                <input type="tel" placeholder="Enter Your Phone Number" >
+            </p>
+            <p>Email: 
+                <input type="email" placeholder="Enter Your Email">
+            </p>
+              <!-- 1) fieldset create a set of field where we get some fields, here as button 
+                   2) legend tag comes as a legend on field border
+                   3) name attributes = help to choose one of the button, if not given then all can be selected -->
+            <fieldset>
+                <legend>Select your item</legend>
+                <p>
+                    <label for="Sandwitch">
+                        <input type="radio" name="fastfood">
+                        Sandwitch                        
+                    </label>
+                </p>
+                <p>
+                    <label for="Kebab">
+                        <input type="radio" name="fastfood">
+                        Kebab                        
+                    </label>
+                </p>
+                <p>
+                    <label for="Biriyani">
+                        <input type="radio" name="fastfood">
+                        Biriyani                        
+                    </label>
+                </p>
+                <p>
+                    <input type="reset">
+                </p>
+            </fieldset>
+            <!-- checkbox can be selected more than one -->
+            <fieldset>
+                <legend>Choose your drinks</legend>
+                <p>
+                    <label for="Softdrinks">
+                        <input type="checkbox">
+                        Softdrinks                        
+                    </label>
+                </p>
+                <p>
+                    <label for="Water">
+                        <input type="checkbox">
+                        Water                        
+                    </label>
+                </p>
+                <p>
+                    <label for="Juice">
+                        <input type="checkbox">
+                        Juice                        
+                    </label>
+                </p>
+                <p>
+                    <input type="reset">
+                </p>
+            </fieldset>
+            <p>Special Instructions:
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+            <button>Submit Your Order</button>
+        </form>
+
+        <h1>How to create a Table</h1>
+        <br>
+        <table>
+            <!-- caption tag keep in center of page -->
+            <caption>THE WORLD'S REAL-TIME BILLIONAIRES</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Net Worth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jeff Bezos</td>
+                    <td>Amazon</td>
+                    <td>$181.5B</td>
+                </tr>
+                <tr>
+                    <td>Elon msk</td>
+                    <td>Tesla</td>
+                    <td>$179.2B</td>
+                </tr>
+                <tr>
+                    <td>Bernard Arnault & Family</td>
+                    <td>LVMH</td>
+                    <td>$144.5B</td>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>Microsoft</td>
+                    <td>$120.2b</td>
+                </tr>
+                <tr>
+                    <td>Mark Zuckerberg</td>
+                    <td>Facebook</td>
+                    <td>$92.1B</td>
+                </tr>
+                <tr>
+                    <td>Zhong Shanshan</td>
+                    <td>Pharmaceuticals</td>
+                    <td>$91.3b</td>
+                </tr>
+                <tr>
+                    <td>Warren Buffett</td>
+                    <td>Berkshire Hathaway</td>
+                    <td>$88.1b</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+
+
+
     </main>
-    <footer></footer>
+    <footer>
+        <p>copyright &copy; ENTHRALL</p>
+    </footer>
 </body>
 </html>
